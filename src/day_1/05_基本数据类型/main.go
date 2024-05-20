@@ -46,8 +46,9 @@ func value_bool() {
 	fmt.Println(c, reflect.TypeOf(c)) // 第二个输出参数是获取类型的函数
 }
 
-// 字符串类型
+// 字符串类型 (字符串在内存中是一段连续存储空间)
 func value_string() {
+
 	var s string // 默认为 " "
 	s = "hello world"
 
