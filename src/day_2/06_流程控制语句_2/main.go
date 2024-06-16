@@ -22,8 +22,18 @@ func DEMO_switch_case() {
 		fmt.Println(" 星期六 ")
 	case 7:
 		fmt.Println(" 星期天 ")
+	case 8:
+		fmt.Printf("无")
+		fallthrough //这个语句可以调到下一个case
+	case 9:
+		fmt.Printf("效")
+		fallthrough 
+	case 10: 
+		fmt.Println("操作")
+		// fallthrough
+		break // break 在switch语句中单独使用没什么效果。 但有fallthrough语句时, break语句可以起到防止case语句跌落,且退出当前case语句的作用
 	default:
-		fmt.Println(" 非法输入 ")	
+		fmt.Println("无此操作")
 	}
 }
 
